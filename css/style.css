@@ -1,0 +1,330 @@
+/* Establece la fuente para todos los elementos */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Elimina los márgenes y los rellenos predeterminados del body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utility classes: sirven para asignar clases a un único elemento */
+
+/* Clase para permitir que los elementos dentro de un contenedor flex se envuelvan en varias líneas */
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+
+/* Clase para cambiar el color de texto a gris oscuro (#acacac) */
+.text-dark-gray {
+    color: #acacac !important;
+}
+
+/* Clase para establecer el ancho de un elemento al 50% de su contenedor */
+.whidth-50p {
+    width: 50% !important;
+}
+
+/* Clase para mostrar un elemento como un bloque en línea (para que se comporten como elementos en línea pero con propiedades de bloque) */
+.display-inline-block {
+    display: inline-block !important;
+}
+
+/* ----------- Estilos para el contenedor general y el aside -------------- */
+
+/* Establece un contenedor con propiedades de Flexbox */
+.container {
+    display: flex;
+}
+
+/* Define un aside con un ancho del 60% para la imagen*/
+aside {
+    position: relative;
+    width: 60%;
+}
+
+/* Hace que las imágenes dentro del aside ocupen todo el ancho y alto del contenedor */
+aside img {
+    width: 500px;
+    height: 100%;
+}
+
+/* Estilo para un contenedor de información dentro del aside */
+aside .aside-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgb(2, 68, 40);
+}
+
+/* Estilos para el título (h4) dentro del aside */
+aside .aside-info h4 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    /* Margen inferior de 20px */
+}
+
+/* Estilos para el subtítulo (h5) dentro del aside */
+aside .aside-info h5 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    /* Margen inferior de 20px */
+}
+
+/* Estilo para los elementos span dentro del aside */
+aside .aside-info span {
+    color: #161f01;
+}
+
+/* ----------- Estilos para el menú de navegación (nav) -------------- */
+
+/* Define un fondo gris claro para el menú de navegación */
+nav {
+    width: 100%;
+    background: #f3f0f0;
+}
+
+/* Estilos para la lista de elementos dentro del menú de navegación */
+nav ul {
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    display: flex;
+    /* Muestra los elementos de la lista en una fila */
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    /* Alinea los elementos a la izquierda */
+}
+
+/* Estilos para cada ítem de la lista en el menú de navegación */
+nav ul li {
+    padding: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+}
+
+/* Estilo cuando un ítem del menú está activo (por ejemplo, la página actual) */
+nav ul li.active {
+    background: white;
+    color: #7DB701;
+    /* Color verde */
+}
+
+/* Estilo cuando un ítem de la lista es hovered (cuando el mouse pasa por encima) */
+nav ul li:hover {
+    color: #7DB701;
+    /* Cambia el color del texto a verde */
+    cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa por encima */
+}
+
+/* ----------- Estilos para la caja general que envuelve contenido (general-wrapper) -------------- */
+
+/* Define un fondo gris claro, bordes redondeados y una barra lateral verde */
+.general-wrapper {
+    background: #f3f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 3px solid #7DB701;
+    /* Barra verde */
+    position: relative;
+}
+
+/* Estilos para las citas (blockquote) dentro de la página */
+blockquote h2 {
+    margin: 0;
+    font-style: italic;
+    /* Hace que el texto sea cursivo */
+}
+
+/* Estilo para el span dentro de blockquote */
+blockquote h2 span {
+    color: #7DB701;
+    /* Verde */
+}
+
+/* Estilo para los párrafos dentro de blockquote */
+blockquote p {
+    font-style: italic;
+    color: #adadad;
+    /* Gris claro */
+}
+
+/* ----------- Estilos para los botones dentro de un contenedor de botones -------------- */
+
+/* Define el diseño de los botones y su distribución */
+.buttons-wrapper {
+    display: flex;
+    margin: 70px 40px;
+    justify-content: space-between;
+    /* Distribuye los elementos con el mayor espacio posible entre ellos */
+}
+
+/* Estilos para los botones dentro de .action-buttons */
+.buttons-wrapper .action-buttons button {
+    padding: 5px 10px;
+    background: none;
+    border: 2px solid #acacac;
+    border-radius: 10px;
+    color: #acacac;
+    cursor: pointer;
+    /* Cambia el cursor a mano */
+}
+
+/* Estilo para los botones cuando el mouse pasa sobre ellos */
+.buttons-wrapper .action-buttons button:hover {
+    background: #acacac;
+    color: white;
+    /* Cambia el color del texto a blanco */
+}
+
+/* Estilo para los iconos dentro de los botones */
+.buttons-wrapper .action-buttons button i {
+    margin-right: 10px;
+    /* Agrega espacio a la derecha del icono */
+}
+
+/* Ajusta el margen entre el texto y el icono de los botones */
+.buttons-wrapper {
+    margin-right: 15px;
+}
+
+/* ----------- Estilos para los iconos de redes sociales -------------- */
+
+/* Define la disposición de los iconos de redes sociales */
+.social-media-buttons {
+    display: flex;
+}
+
+/* Estilos para los iconos de redes sociales (i dentro de .social-media-buttons) */
+.social-media-buttons i {
+    border: 1px solid #acacac;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* Hace los iconos redondos */
+    color: #acacac;
+    text-align: center;
+    line-height: 2;
+    /* Centra el texto verticalmente */
+    margin-left: 5px;
+}
+
+/* Estilo cuando el mouse pasa sobre un icono de red social */
+.social-media-buttons i:hover {
+    background: #acacac;
+    color: white;
+}
+
+/* ----------- Estilos para el pie de página (footer) -------------- */
+
+/* Define márgenes y la distribución en el pie de página */
+footer {
+    margin: 40px;
+    display: flex;
+}
+
+/* Estilos para un componente dentro del pie de página, se le da un 50% de ancho */
+footer .personal-data-component {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    /* Margen inferior de 20px */
+}
+
+
+/* ----------- Estilos Responsive -------------- */
+
+/* Cuando la pantalla tiene un ancho máximo de 768px (tabletas y dispositivos móviles en orientación horizontal) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Hace que los elementos dentro del contenedor se apilen verticalmente */
+    }
+
+    aside {
+        width: 100%;
+        /* Hace que el aside ocupe todo el ancho de la pantalla en pantallas más pequeñas */
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* Muestra los elementos del menú en una columna */
+        align-items: center;
+        /* Centra los elementos de la lista */
+    }
+
+    nav ul li {
+        padding: 15px;
+        /* Reduce el padding de los elementos del menú */
+        font-size: 14px;
+        /* Reduce el tamaño de fuente del menú */
+    }
+
+    .buttons-wrapper {
+        flex-direction: column;
+        /* Apila los botones verticalmente */
+        margin: 20px 0;
+        /* Reduce el margen */
+    }
+
+    .buttons-wrapper .action-buttons button {
+        width: 100%;
+        /* Hace que los botones ocupen todo el ancho en pantallas pequeñas */
+        margin-bottom: 10px;
+        /* Agrega espacio entre los botones */
+    }
+
+    footer {
+        flex-direction: column;
+        /* Apila los elementos del pie de página verticalmente */
+    }
+
+    footer .personal-data-component {
+        flex-basis: 100%;
+        /* Hace que el componente ocupe todo el ancho del pie de página */
+    }
+}
+
+/* Cuando la pantalla tiene un ancho máximo de 480px (dispositivos móviles en orientación vertical) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        /* Hace que los elementos dentro del contenedor se apilen verticalmente */
+    }
+
+    aside {
+        width: 100%;
+        /* Hace que el aside ocupe todo el ancho de la pantalla */
+    }
+
+    nav ul li {
+        padding: 10px;
+        /* Reduce el padding en los elementos del menú */
+        font-size: 12px;
+        /* Reduce aún más el tamaño de fuente */
+    }
+
+    .social-media-buttons i {
+        width: 25px;
+        height: 25px;
+        /* Ajusta el tamaño de los iconos de redes sociales */
+    }
+
+    blockquote h2 {
+        font-size: 20px;
+        /* Reduce el tamaño de los títulos en blockquotes */
+    }
+
+    .buttons-wrapper .action-buttons button {
+        padding: 5px 10px;
+        font-size: 14px;
+        /* Reduce el tamaño de fuente de los botones */
+    }
+
+    footer .personal-data-component {
+        flex-basis: 100%;
+        /* Hace que el componente ocupe todo el ancho */
+    }
+}

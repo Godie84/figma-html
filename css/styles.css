@@ -1,0 +1,61 @@
+/*
+PRACTICA DE SELECTORES
+*/
+
+
+/*
+selector {
+  atributo: valor;
+}
+*/
+
+/* Selector universal */
+* {
+    color: #333;
+}
+
+
+
+#some-id {
+    /* Selector por id */
+    width: 30%;
+}
+
+.personal-data-component {
+    /* Selector de clase */
+    border: 1px solid purple;
+    width: 50%;
+    margin: 10px;
+    display: inline;
+}
+
+ul {
+    /* Selector por tagname */
+    list-style-type: none; /* Quita las vinetas */
+    display: flex;  /* Hace que los elementos se muestren flexibles en una sola linea */
+    justify-content: space-evenly; /* Escios aiguales entre los elementos */
+    padding: 0; /* Quita el espacio del borde interno */
+
+}
+
+ul li {
+    /* Selector anidado */
+    padding: 15px;
+    border: 1px solid green;
+}
+
+ul li.active{
+    /* Conjunciond e deselectores, li que vida dentro de ul con la clase .active */
+    background-color: #eaeaea;
+}
+
+ul li:hover {
+    /* Selector de pseudo-clase */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ul li:nth-of-type(1) {
+     Selector de pseudo-clase
+    background-color: #cdcdcd;
+} */

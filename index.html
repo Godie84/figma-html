@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Definición del charset (codificación de caracteres) -->
+    <meta charset="UTF-8">
+    
+    <!-- Metaetiqueta para asegurar que el diseño sea adaptable a la pantalla (responsivo) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Document</title>
+    
+    <!-- Enlace a la hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="./css/style-demo.css">
+    
+    <!-- Enlace a la librería Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Contenedor principal que agrupa todo el contenido de la página -->
+        
+        <aside id="some-id">
+            <!-- Sección lateral (aside) que contiene la imagen y descripción -->
+            <img src="./img/hamburguesa.png" alt="imagen hamburguesa https://www.portafolio.co/files/article_new_multimedia/uploads/2022/04/12/6255e2e41db6c.jpeg">
+            <!-- Imagen principal del producto (hamburguesa) -->
+            
+            <div class="aside-info">
+                <!-- Contenedor con la información de la hamburguesa -->
+                <h4>El Rancho</h4>
+                <!-- Nombre del establecimiento -->
+                <h5>Hamburguesas | comidas rapidas</h5>
+                <!-- Descripción corta del tipo de comida -->
+                <span>Especialistas en hamburguesas</span>
+                <!-- Detalle adicional sobre lo que hacen -->
+            </div>
+        </aside>
+        
+        <div>
+            <!-- Contenedor para el contenido principal (navegación, artículo, pie de página) -->
+            
+            <nav>
+                <!-- Barra de navegación -->
+                <ul>
+                    <li>Bienvenido</li>
+                    <!-- Enlace de bienvenida -->
+                    <li>Nosotros</li>
+                    <!-- Enlace sobre la empresa -->
+                    <li class="active">Productos</li>
+                    <!-- Enlace a la sección de productos (activo) -->
+                    <li>Contacto</li>
+                    <!-- Enlace a la sección de contacto -->
+                </ul>
+            </nav>
+            
+            <article>
+                <!-- Sección de contenido principal -->
+                <section>
+                    <!-- Bloque de cita destacada -->
+                    <blockquote class="general-wrapper">
+                        <!-- Bloque que se usa para resaltar contenido -->
+                        <h2>Hamburguesa todo terreno <span>/ Comidas Rapidas</span></h2>
+                        <!-- Título de la hamburguesa con un subtítulo -->
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <!-- Descripción de la hamburguesa (texto de ejemplo) -->
+                    </blockquote>
+                </section>
+                
+                <section class="buttons-wrapper">
+                    <!-- Sección de botones de acción -->
+                    <div class="action-buttons">
+                        <!-- Botones con iconos de Font Awesome -->
+                        <button><i class="fas fa-search"></i>Ver producto</button>
+                        <!-- Botón para ver más detalles del producto -->
+                        <button><i class="fas fa-shopping-cart"></i>Comprar</button>
+                        <!-- Botón para comprar el producto -->
+                    </div>
+                    
+                    <div class="social-media-buttons">
+                        <!-- Contenedor de botones de redes sociales -->
+                        <a href="https://web.facebook.com/?_rdc=1&_rdr#"><i class="fab fa-facebook-f"></i></a>
+                        <!-- Enlace a Facebook -->
+                        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                        <!-- Enlace a Twitter -->
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <!-- Enlace a Instagram -->
+                        <a href="https://www.whatsapp.com/?lang=es_LA"><i class="fab fa-whatsapp"></i></a>
+                        <!-- Enlace a WhatsApp -->
+                    </div>
+                </section>
+            </article>
+            
+            <footer class="general-wrapper flex-wrap">
+                <!-- Pie de página que contiene información adicional -->
+                <div class="personal-data-component">
+                    <!-- Componente de datos personales -->
+                    <b class="whidth-50p display-inline-block">Hamburguesas El Rancho</b>
+                    <!-- Nombre del establecimiento -->
+                    <span class="text-dark-gray">El mejor sabor de la carne</span>
+                    <!-- Lema o eslogan -->
+                </div>
+                
+                <div class="personal-data-component">
+                    <b class="whidth-50p display-inline-block">Telefono</b>
+                    <!-- Título de la sección (Teléfono) -->
+                    <span class="text-dark-gray">123 123 12 34</span>
+                    <!-- Número de teléfono -->
+                </div>
+                
+                <div class="personal-data-component">
+                    <b class="whidth-50p display-inline-block">Dirección</b>
+                    <!-- Título de la sección (Dirección) -->
+                    <span class="text-dark-gray">Av. siempre viva</span>
+                    <!-- Dirección física del negocio -->
+                </div>
+                
+                <div class="personal-data-component">
+                    <b class="whidth-50p display-inline-block">Sitio web</b>
+                    <!-- Título de la sección (Sitio web) -->
+                    <span class="text-dark-gray">www.elrancho.com</span>
+                    <!-- URL del sitio web -->
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

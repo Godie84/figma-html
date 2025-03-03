@@ -1,0 +1,64 @@
+/* Establece la fuente para todos los elementos */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Elimina los márgenes y los rellenos predeterminados del body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----------- Estilos para el contenedor general y el aside -------------- */
+
+/* Establece un contenedor con propiedades de Flexbox */
+.container {
+    display: flex;
+}
+
+
+/* Define un aside con un ancho del 60% para la imagen*/
+aside {
+    position: relative;
+    width: 60%;
+}
+
+/* Hace que las imágenes dentro del aside ocupen todo el ancho y alto del contenedor */
+aside img {
+    width: 500px;
+    height: 100%;
+}
+
+/* Estilo para un contenedor de información dentro del aside */
+aside .aside-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgb(2, 68, 40);
+}
+
+/* Estilos para el título (h4) dentro del aside */
+aside .aside-info h4 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    /* Margen inferior de 20px */
+}
+
+/* Estilos para el subtítulo (h5) dentro del aside */
+aside .aside-info h5 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    /* Margen inferior de 20px */
+}
+
+/* Estilo para los elementos span dentro del aside */
+aside .aside-info span {
+    color: #161f01;
+}
+
+/* Define un fondo gris claro para el menú de navegación */
+nav {
+    width: 100%;
+    background: #f3f0f0;
+}
