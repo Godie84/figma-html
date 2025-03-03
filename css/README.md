@@ -32,6 +32,7 @@ Breve descripción de lo que hace el proyecto, cuál es su propósito o qué pro
 
 Describe el proyecto en más detalle. Qué hace, cómo lo hace, qué tecnologías utiliza, etc.
 
+
 ---
 
 ## Instalación
